@@ -1,14 +1,27 @@
 use_frameworks!
 
 target 'QuickApp_Example' do
-  pod 'QuickApp', :path => '../'
+  pod 'AFNetworking'
+  pod 'Reachibility'
+  pod 'YYModel'
+  pod 'PINCache'
+  pod 'SDWebImage'
+  pod 'FMDB'
+  pod 'Masonry'
+  pod 'WMPageController'
+  pod 'SVPullToRefresh'
+  pod 'SDCycleScrollView'
+  pod 'UITableView-FDTemplateLayoutCell'
+  pod 'DZNEmptyDataSet'
+  pod 'SVProgressHUD'
+  pod 'IQKeyboardManager'
 
   target 'QuickApp_Tests' do
     inherit! :search_paths
 
     pod 'Specta'
-  pod 'Expecta'
-  pod 'FBSnapshotTestCase'
-  pod 'Expecta+Snapshots'
+    pod 'Expecta'
+    pod 'FBSnapshotTestCase'
+    pod 'Expecta+Snapshots'
   end
 end
