@@ -24,6 +24,8 @@
 		621E1C9ADC821DD97029632C /* Pods_QuickApp_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C480E99039F3F98F055800DA /* Pods_QuickApp_Tests.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		F198C1B51F29D1A9004DECA5 /* CKHttpUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = F198C1B41F29D1A9004DECA5 /* CKHttpUrls.m */; };
+		F198C1B81F29E5CD004DECA5 /* CKNetworkingService.m in Sources */ = {isa = PBXBuildFile; fileRef = F198C1B71F29E5CD004DECA5 /* CKNetworkingService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CE4B77FB282DC9D09C51369 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		2361A92C317A1316DE4A7170 /* QuickApp.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = QuickApp.podspec; path = ../QuickApp.podspec; sourceTree = "<group>"; };
+		0CE4B77FB282DC9D09C51369 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2361A92C317A1316DE4A7170 /* QuickApp.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = QuickApp.podspec; path = ../QuickApp.podspec; sourceTree = "<group>"; };
 		3C278EB3948703BD30691A2D /* Pods-QuickApp_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickApp_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickApp_Tests/Pods-QuickApp_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		470626BE062DE066A80406AB /* Pods-QuickApp_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickApp_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickApp_Tests/Pods-QuickApp_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5326C50687DA96A072EE9801 /* Pods-QuickApp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickApp_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickApp_Example/Pods-QuickApp_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,8 +67,12 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0FF0C642A3C16AA948C0F8B /* Pods_QuickApp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickApp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B69646862D02681268AEE3B3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B69646862D02681268AEE3B3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C480E99039F3F98F055800DA /* Pods_QuickApp_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickApp_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F198C1B31F29D1A9004DECA5 /* CKHttpUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKHttpUrls.h; sourceTree = "<group>"; };
+		F198C1B41F29D1A9004DECA5 /* CKHttpUrls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKHttpUrls.m; sourceTree = "<group>"; };
+		F198C1B61F29E5CD004DECA5 /* CKNetworkingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKNetworkingService.h; sourceTree = "<group>"; };
+		F198C1B71F29E5CD004DECA5 /* CKNetworkingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKNetworkingService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,13 +138,13 @@
 		6003F593195388D20070C39A /* Example for QuickApp */ = {
 			isa = PBXGroup;
 			children = (
+				F198C1AE1F29CE71004DECA5 /* Config */,
+				F198C1AF1F29CE71004DECA5 /* Home */,
+				F198C1B01F29CE71004DECA5 /* Networking */,
 				6003F59C195388D20070C39A /* CKAppDelegate.h */,
 				6003F59D195388D20070C39A /* CKAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* CKViewController.h */,
 				6003F5A6195388D20070C39A /* CKViewController.m */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for QuickApp";
@@ -148,6 +154,9 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F595195388D20070C39A /* QuickApp-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -183,6 +192,31 @@
 				0CE4B77FB282DC9D09C51369 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		F198C1AE1F29CE71004DECA5 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F198C1B31F29D1A9004DECA5 /* CKHttpUrls.h */,
+				F198C1B41F29D1A9004DECA5 /* CKHttpUrls.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F198C1AF1F29CE71004DECA5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F198C1B01F29CE71004DECA5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F198C1B61F29E5CD004DECA5 /* CKNetworkingService.h */,
+				F198C1B71F29E5CD004DECA5 /* CKNetworkingService.m */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		F30D73B0C606B71CA459D60A /* Pods */ = {
@@ -397,6 +431,8 @@
 				6003F59E195388D20070C39A /* CKAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* CKViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				F198C1B51F29D1A9004DECA5 /* CKHttpUrls.m in Sources */,
+				F198C1B81F29E5CD004DECA5 /* CKNetworkingService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

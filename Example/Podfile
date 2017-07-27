@@ -2,7 +2,7 @@ use_frameworks!
 
 target 'QuickApp_Example' do
   pod 'AFNetworking'
-  pod 'Reachibility'
+  pod 'Reachability'
   pod 'YYModel'
   pod 'PINCache'
   pod 'SDWebImage'
@@ -11,7 +11,7 @@ target 'QuickApp_Example' do
   pod 'WMPageController'
   pod 'SVPullToRefresh'
   pod 'SDCycleScrollView'
-  pod 'UITableView-FDTemplateLayoutCell'
+  pod 'UITableView+FDTemplateLayoutCell'
   pod 'DZNEmptyDataSet'
   pod 'SVProgressHUD'
   pod 'IQKeyboardManager'
